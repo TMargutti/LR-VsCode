@@ -58,13 +58,17 @@ while arcoiro == False:
     """
 
 
-#While / Enquanto para contar multiplos
+#While / Enquanto para contar multiplos ate 50 (51 exclusiv)
 numero = int(input("\f Digite o numero: "))
 while numero < 51:
-    if numero % numero != 0:
-        print ("Resultado não zero")
+    #na divisão do numero por inteiro, se for igual a zero (==0) printa o numero
+    #Exemplo 6 % 3 == 0???? printa o numero + "Multiplo"
+    if numero % 3 == 0:
+        print (numero,"Multiplo", (numero // 3))
+        #começa com valor e adiciona mais um aqui nessa porra
         numero += 1
         continue
     print(numero)
     numero += 1
+    
     
